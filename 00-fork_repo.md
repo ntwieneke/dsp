@@ -39,8 +39,6 @@ There are files in your forked repository that you need to edit to add your work
 
 When viewing an individual file in your forked repository on GitHub, you will an see "Edit this file" button that you can click to get an in-browser editor.
 
-Solved! - NW 3/5/16
-
 ![edit](img/edit_file.png)
 
 After you've edited the file, you need to _commit_ your changes to make them permanent. At the bottom of the page you can add a _commit message_ describing your changes and then click the green "Commit changes" button.
@@ -57,6 +55,5 @@ Here's your first chance to practice this:
 
 What is your favorite [emoji](http://www.emoji-cheat-sheet.com/)?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
-
+:shipit:
 
