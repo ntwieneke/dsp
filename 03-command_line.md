@@ -14,10 +14,25 @@ these in a couple of hours.
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
 touch - create a new empty file
+
 push/pop - allows you to easily switch between paths
+
 * - applies a wildcard to that character
-apropos - help articles
-pipe
+
+apropos - help articles, but should only be used as a last resort (google is better)
+
+pipe vs redirect:
+
+Pipe (|) will take the output of one command and pipe it through another command
+
+Redirect (>) will take a file and write it to another file
+
+Find - This will require a -name argument, the search parameter, and -print or pipe into another command
+
+grep - allows you to search through a file for a term, can be done recursively with -R
+
+env - shows you your PATH and other environment variables
+
 ---
 
 ###Q2.  List Files in Unix   
