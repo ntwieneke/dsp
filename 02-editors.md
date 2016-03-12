@@ -59,7 +59,7 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What terminal editor will you use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+I will use Nano as I have used it in the past to do things like edit my PATH
 
 --
 
@@ -67,6 +67,5 @@ What terminal editor will you use? How did you make your decision?
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
-
+I will use Pycharms, it seems to have useful features for organization and for making API calls
  
