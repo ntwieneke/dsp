@@ -38,15 +38,20 @@ env - shows you your PATH and other environment variables
 ###Q2.  List Files in Unix   
 
 What do the following commands do:  
-`ls`  
-`ls -a`  
-`ls -l`  
-`ls -lh`  
-`ls -lah`  
-`ls -t`  
-`ls -Glp`  
+`ls`  list files in this directory
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+`ls -a`  lists all files that matches name argument
+
+`ls -l`  lists file in long format
+
+`ls -lh`  same as bove but 'human readable'
+
+`ls -lah`  lists all files in long human readable format
+
+`ls -t`  shows timestamp
+
+`ls -Glp`  prevents group info from being show, and shows file type
+
 
 ---
 
@@ -54,7 +59,15 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+-f interprets name argument as a directory, so you can use this to search through directories
+
+-q displays nonprinting characters as ? might be useful for messy data
+
+-R recursive (display subdirectories)
+
+-x organizes files as rows
+
+-L displays files with symbolic link
 
 ---
 
@@ -62,7 +75,10 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+some commands cannot accept stand input stream from pipe, and xargs allows you to do this by breaking the list into acceptable sub-lists
 
+for instance
+
+echo {1..9} | xargs -n1 will out put echo 1-9 with 1 number per row
  
 
