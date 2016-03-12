@@ -13,8 +13,11 @@ these in a couple of hours.
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
-
+touch - create a new empty file
+push/pop - allows you to easily switch between paths
+* - applies a wildcard to that character
+apropos - help articles
+pipe
 ---
 
 ###Q2.  List Files in Unix   
