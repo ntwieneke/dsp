@@ -82,3 +82,5 @@ for instance
 echo {1..9} | xargs -n1 will out put echo 1-9 with 1 number per row
  
 
+
+
