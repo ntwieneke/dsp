@@ -36,8 +36,7 @@ Sets are faster if you are just trying to find a unique value, but lists are fas
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
-
+Lambda is similar to a 'block' in Ruby.  Lambda 
 ---
 
 ###Q4. List Comprehension, Map &amp; Filter
