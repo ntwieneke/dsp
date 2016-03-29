@@ -36,14 +36,53 @@ Sets are faster if you are just trying to find a unique value, but lists are fas
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
-Lambda is similar to a 'block' in Ruby.  Lambda 
+Lambda functions are anonymous functions that essentially allow you to create a 'temporary' function.  This way you can create a function within another function without having to create a whole separate function. Lambda functions can only be one line
+
+As an example you could have a list of words ['this', 'iS', 'a', 'List']
+
+Then you can use the sorted function which takes a key (which is another fucntion) that will iterate through the list and perform an operation
+
+key= lambda word.lower()
+
+This function would allow you to iterate through the list, and ouput the sorted list after lowercasing each element in the list
+
+The advantage of a lambda function here is that you can write it in-line with the rest of the sorted function, rather than having to create a separate function and call it
+
 ---
 
 ###Q4. List Comprehension, Map &amp; Filter
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+List comprehension allows you to iterate through a list and perform a function on each element.  'Map' a function that works the same as list comprehension that takes a function and a list as parameters, then iterates the function over the list and gives you the output.
+
+An example for a list comp. and it's map counterpart:
+
+numlist = [1...10]
+
+squared_list = [n*n for n in numlist]
+
+This will iterate though numlist and square each element
+
+Map version:
+
+squared_list = map(lambda n: n*n, numlist)
+
+These do the same, but the list comprehension is a bit eaiser to read.
+
+Filter will iterate through a list and return a value if it meets the 'if' requirement.  For example:
+
+even_numbers = filter(lambda n: n%2==0, numlist)
+
+Would return all the even numbers (or numbers that have a remainder of 0 when divded by 2)
+
+This can be done in list comprehension
+
+In summary list comprehension > map/filter > for loop (in these cases)
+
+Dictionary comprehension would allow you to iterate through a list and create a dictionary from it
+
+Set comprehension allows you to iterate through a list and create a set
 
 ---
 
@@ -58,7 +97,7 @@ date_start = '01-02-2013'
 date_stop = '07-28-2015'
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE (answer will be in number of days)
+937 days
 
 b.  
 ```
@@ -66,7 +105,7 @@ date_start = '12312013'
 date_stop = '05282015'  
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE (answer will be in number of days)
+513 days
 
 c.  
 ```
@@ -74,7 +113,7 @@ date_start = '15-Jan-1994'
 date_stop = '14-Jul-2015'  
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE  (answer will be in number of days)
+7850 days
 
 Place code in this file: [q5_datetime.py](python/q5_datetime.py)
 

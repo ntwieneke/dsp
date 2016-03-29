@@ -15,7 +15,17 @@ def match_ends(words):
     >>> match_ends(['aaa', 'be', 'abc', 'hello'])
     1
     """
-    raise NotImplementedError
+    count = 0
+    for word in words:
+        if len(word) >= 2 and word[0] == word[-1]:
+            count += 1
+    return count
+    
+print match_ends(['aba', 'xyz', 'aa', 'x', 'bbb'])
+print match_ends(['', 'x', 'xy', 'xyx', 'xx'])
+print match_ends(['aaa', 'be', 'abc', 'hello'])            
+
+    # raise NotImplementedError
 
 
 def front_x(words):
@@ -32,8 +42,18 @@ def front_x(words):
     >>> front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark'])
     ['xanadu', 'xyz', 'aardvark', 'apple', 'mix']
     """
-    raise NotImplementedError
 
+    x_words = []
+    reg_words = []
+    for word in words:
+        if word[0] == 'x':
+            x_words.append(word)
+        else:
+            reg_words.append(word)
+    return sorted(x_words) + sorted(reg_words)
+    # raise NotImplementedError
+
+print front_x(['bbb', 'ccc', 'axx', 'xzz', 'xaa'])
 
 def sort_last(tuples):
     """
@@ -49,7 +69,12 @@ def sort_last(tuples):
     >>> sort_last([(1, 7), (1, 3), (3, 4, 5), (2, 2)])
     [(2, 2), (1, 3), (3, 4, 5), (1, 7)]
     """
-    raise NotImplementedError
+    return sorted(tuples, key= lambda t: t[-1])
+
+print sort_last([(1, 3), (3, 2), (2, 1)])
+print sort_last([(1, 7), (1, 3), (3, 4, 5), (2, 2)])
+
+    # raise NotImplementedError
 
 
 def remove_adjacent(nums):
@@ -68,8 +93,20 @@ def remove_adjacent(nums):
     >>> remove_adjacent([])
     []
     """
-    raise NotImplementedError
+    new_list = []
+    current_num = None
+    for num in nums:
+        if num != current_num:
+            current_num = num
+            new_list.append(num)
+    return new_list
 
+print remove_adjacent([1, 2, 2, 3])
+print remove_adjacent([3, 2, 3, 3, 3])
+
+    # raise NotImplementedError
+
+print ("linear merge \n")
 
 def linear_merge(list1, list2):
     """
@@ -85,4 +122,11 @@ def linear_merge(list1, list2):
     >>> linear_merge(['aa', 'aa'], ['aa', 'bb', 'bb'])
     ['aa', 'aa', 'aa', 'bb', 'bb']
     """
-    raise NotImplementedError
+
+    new_list = list1 + list2
+    return sorted(new_list)
+
+print linear_merge(['aa', 'xx', 'zz'], ['bb', 'cc'])
+print linear_merge(['aa', 'aa'], ['aa', 'bb', 'bb'])
+
+    # raise NotImplementedError
