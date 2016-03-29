@@ -17,7 +17,7 @@ Lists and tuples are very similar in function, both are arrays of elements.  How
 Tuples can be used as keys in ditionaries and lists cannot.
 
 
-
+ 
 ---
 
 ###Q2. Lists &amp; Sets
