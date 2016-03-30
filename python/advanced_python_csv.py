@@ -1,1 +1,1 @@
-PLACE YOUR CODE HERE
+df[' email'].to_csv('python/emails.csv')

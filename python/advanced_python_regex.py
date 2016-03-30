@@ -100,21 +100,5 @@ email_set = set(email_split[1])
 print email_set
 
 
-# In[79]:
 
-df[' email'].to_csv('python/emails.csv')
-
-
-# In[83]:
-
-split = lambda x: x.split('')
-name_split = [split for x in df['name']]
-
-
-# In[84]:
-
-print name_split
-
-
-# In[ ]:
 

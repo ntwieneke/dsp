@@ -83,7 +83,7 @@ faculty_dict = { 'Ellenberg': [\
 ```
 Print the first 3 key and value pairs of the dictionary:
 
->> REPLACE THIS WITH YOUR RESPONSE
+{'Putt': [' phd scd', 'Professor', 'mputt@mail.med.upenn.edu'], 'Feng': [' phd', 'Assistant', 'ruifeng@upenn.edu'], 'Bilker': ['phd', 'Professor', 'warren@upenn.edu']}
 
 ####Q7.  The previous dictionary does not have the best design for keys.  Create a new dictionary with keys as:
 
@@ -98,11 +98,12 @@ professor_dict = {('Susan', 'Ellenberg'): ['Ph.D.', 'Professor', 'sellenbe@upenn
 
 Print the first 3 key and value pairs of the dictionary:
 
->> REPLACE THIS WITH YOUR RESPONSE
+{('Yimei', 'Li'): [' phd', 'Assistant', 'liy3@email.chop.edu'], ('Hongzhe', 'Li'): [' phd', 'Professor', 'hongzhe@upenn.edu'], ('Justine', 'Shults'): [' phd', 'Professor', 'jshults@mail.med.upenn.edu']}
 
 ####Q8.  It looks like the current dictionary is printing by first name.  Sort by last name and print the first 3 key and value pairs.  
 
->> REPLACE THIS WITH YOUR RESPONSE
+Dictionarys cannot be sorted
+
 
 Place your code in this file: [advanced_python_dict.py](python/advanced_python_dict.py)
 
