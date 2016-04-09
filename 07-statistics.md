@@ -95,7 +95,11 @@ So the correct answer is ~ 0.145
 ###Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+A frequentist approach will use the currently available information to make a predictive model to discern an answer, while a Bayesian approach will use the same methods but will also account for the history of the problem or relevant information.
+
+
+Example:  Using the pregnancy data from Think Stats, with a frequentist approach one could infer a mother's likelyhood of delivering a live baby given various attributes (minus her previous pregnancy history).  The Bayesian approach would account for her pregnancy history.
+
 
 ---
 
