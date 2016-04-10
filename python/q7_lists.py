@@ -106,7 +106,7 @@ print remove_adjacent([3, 2, 3, 3, 3])
 
     # raise NotImplementedError
 
-print ("linear merge \n")
+print ("\n linear merge \n")
 
 def linear_merge(list1, list2):
     """
@@ -122,11 +122,31 @@ def linear_merge(list1, list2):
     >>> linear_merge(['aa', 'aa'], ['aa', 'bb', 'bb'])
     ['aa', 'aa', 'aa', 'bb', 'bb']
     """
+    k1 = 0
+    k2 = 0
+    list3 = []
+    length = len(list1) + len(list2)
+    while len(list3) != length:
+        if len(list1) == k1:
+            list3 += list2[k2:]
+            pass
+        elif len(list2) == k2:
+            result += list1[k1:]
+            pass
+        elif list1[k1] < list2[k2]:
+            list3.append(list1[k1])
+            k1 += 1
+        else:
+            list3.append(list2[k2])
+            k2 += 1
+    return list3
 
-    new_list = list1 + list2
-    return sorted(new_list)
+    # new_list = list1 + list2
+    # return sorted(new_list)
 
-print linear_merge(['aa', 'xx', 'zz'], ['bb', 'cc'])
-print linear_merge(['aa', 'aa'], ['aa', 'bb', 'bb'])
+print linear_merge([1, 3, 4], [2, 5, 6])
+
+# print linear_merge(['aa', 'xx', 'zz'], ['bb', 'cc'])
+# print linear_merge(['aa', 'aa'], ['aa', 'bb', 'bb'])
 
     # raise NotImplementedError
